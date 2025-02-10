@@ -35,7 +35,7 @@ ul {
 }
 
 li {
-  font-size: 1.0em;
+  font-size: 1em;
   margin-top: 3px;
   color: #555;
 }
@@ -47,12 +47,43 @@ p {
   margin-left: 5px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .fondo {
+    max-width: 90%;
     flex-direction: column;
   }
-  
+
   .barrita, .contenido {
     width: 100%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  li, p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fondo {
+    max-width: 100%;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .barrita, .contenido {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  li, p {
+    font-size: 0.9em;
   }
 }
